@@ -1,0 +1,54 @@
+@import "lib/vars";
+
+body {
+	color: $primary-font-color;
+}
+
+.bg-primary, .navbar, .footer {
+	background-color: $primary-color;
+}
+
+button {
+	border: none;
+	outline: none;
+	border-radius: $default-border-radius;
+	&.btn {
+		&.primary {
+			background-color: $primary-color;
+		}
+		&.secondary {
+			background-color: $secondary-color
+		}
+	}
+}
+
+div {
+	box-sizing: border-box;
+	&.row {
+		margin-left: -$default-spacing;
+		margin-left: -$default-spacing;
+	}
+	&.col {
+		padding-right: $default-spacing;
+		padding-left: $default-spacing;
+	}
+}
+
+input {
+	&[type="text"],
+	&[type="number"],
+	&[type="tel"],
+	&[type="email"] {
+		outline: $primary-color 1px solid;
+		border-radius: $default-border-radius;
+	}
+}
+
+.opacity-50 {
+	opacity: 0.5;
+	transition: all 1s easy;
+}
+
+:fullscreen a {
+    display: flex
+}
