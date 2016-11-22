@@ -1,0 +1,23 @@
+{
+  "name": "copy",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Adilson Schmitt Junior <adilsonschj@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sirgallifrey/automatizacao-gulp",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "lodash": "^4.13.1",
+    "Materialize": "materialize#^0.97.6"
+  }
+}

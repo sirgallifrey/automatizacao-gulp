@@ -21,3 +21,5 @@ gulp.task('server', function(){
 	gulp.watch('./src/**/*.scss', ['sass'])
 	gulp.watch('./src/*.html').on('change', browserSync.reload)
 })
+
+gulp.task('default', ['server'])

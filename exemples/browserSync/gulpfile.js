@@ -13,3 +13,5 @@ gulp.task('server', function(){
 
 	gulp.watch('./src/*.html').on('change', browserSync.reload)
 })
+
+gulp.task('default', ['server'])
