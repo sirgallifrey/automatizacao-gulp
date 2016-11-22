@@ -3,18 +3,12 @@
 const gulp = require('gulp')
 const rm = require('rimraf')
 const rename = require('gulp-rename')
+const concat = require('gulp-concat')
 
 
 gulp.task('clean', function(cb){
 	rm('./dist', cb)
 })
-
-//
-// const libsJavascript = [
-// 	'./bower_components/**/dist/**/*.min.js',
-// 	'!./bower_components/**/dist/**/sizzle.min.js',
-// 	'./bower_components/**/angular.min.js'
-// ]
 
 
 const libsJavascript = [
@@ -29,10 +23,10 @@ const libsCss = [
 ]
 
 gulp.task('build', ['copy:javascript', 'copy:css', 'clean'])
-
+//{newLine: ';'}
 gulp.task('copy:javascript', ['clean'], function(){
 	return gulp.src(libsJavascript)
-		.pipe(rename({dirname:''}))
+		.pipe(concat('libs.js'))
 		.pipe(gulp.dest('./dist/assets/js'))
 })
 

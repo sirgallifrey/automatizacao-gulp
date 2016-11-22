@@ -9,13 +9,6 @@ gulp.task('clean', function(cb){
 	rm('./dist', cb)
 })
 
-//
-// const libsJavascript = [
-// 	'./bower_components/**/dist/**/*.min.js',
-// 	'!./bower_components/**/dist/**/sizzle.min.js',
-// 	'./bower_components/**/angular.min.js'
-// ]
-
 
 const libsJavascript = [
 	'./bower_components/angular/**/angular.min.js',
