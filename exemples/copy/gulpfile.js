@@ -34,3 +34,5 @@ gulp.task('copy:css', ['clean'], function(){
 		.pipe(rename({dirname:''}))
 		.pipe(gulp.dest('./dist/assets/css'))
 })
+
+gulp.task('default', ['build'])
