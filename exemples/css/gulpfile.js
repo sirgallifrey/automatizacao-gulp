@@ -28,3 +28,5 @@ gulp.task('sass', ['clean'], function(){
 })
 
 gulp.task('build', ['sass', 'clean'])
+
+gulp.task('default', ['build'])
