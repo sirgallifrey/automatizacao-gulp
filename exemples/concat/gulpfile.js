@@ -32,6 +32,7 @@ gulp.task('copy:javascript', ['clean'], function(){
 
 gulp.task('copy:css', ['clean'], function(){
 	return gulp.src(libsCss)
+		.pipe(concat('libs.css'))
 		.pipe(rename({dirname:''}))
 		.pipe(gulp.dest('./dist/assets/css'))
 })
