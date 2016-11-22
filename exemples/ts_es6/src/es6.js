@@ -19,7 +19,7 @@ const getMaiorDeTrinta = function(pessoas) {
 console.log(getMaiorDeTrinta(pessoas))
 
 
-const sayMessage = function(pessoas) {
+const sayMessage = (pessoas) => {
 	//String Interpolation
 	return `Hello ${pessoas[0].nome},
 	aposto que o es5 não tem string literal

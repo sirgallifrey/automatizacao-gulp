@@ -27,3 +27,5 @@ gulp.task('typescript', ['clean'], function() {
 })
 
 gulp.task('build', ['typescript', 'es6','clean'])
+
+gulp.task('default', ['build'])

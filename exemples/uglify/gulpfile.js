@@ -17,3 +17,5 @@ gulp.task('minify:js', ['clean'], function(){
 })
 
 gulp.task('build', ['minify:js','clean'])
+
+gulp.task('default', ['build']);
